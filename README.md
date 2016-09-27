@@ -23,7 +23,7 @@ How to Use
 <head>
 	<base href="/">
 
-  <!-- Polyfills for ES6 -->
+	<!-- Polyfills for ES6 -->
 	<script src="polyfills.js"></script>
 
 	<!-- Library bundle -->
@@ -49,6 +49,11 @@ How to Use
 
 What's Included
 ---------------
+
+* `Zone.js`
+* `Reflect.js`
+* `System.js`
+* `Rx.js`
 
 * `@angular/common`
 * `@angular/compiler`
