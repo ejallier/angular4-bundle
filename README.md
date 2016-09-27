@@ -45,3 +45,24 @@ How to Use
 </body>
 </html>
 ~~~~~~~~~~
+
+
+What's Included
+---------------
+
+* `@angular/common`
+* `@angular/compiler`
+* `@angular/core`
+* `@angular/forms`
+* `@angular/http`
+* `@angular/platform-browser`
+* `@angular/platform-browser-dynamic`
+* `@angular/router`
+
+
+How is It Done?
+---------------
+
+Well, I merged the above UMD bundle files, in the correct order, then
+manually hand-edited the file, converting UMD module declaration headers
+with `System.amdDefine` calls.
