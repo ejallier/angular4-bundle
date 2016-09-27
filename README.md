@@ -11,6 +11,8 @@ No more. They are now UMD modules that require a build process (e.g. with WebPac
 For those who don't want to bother with a build step (and just want all of Angular 2
 anyway), I have hand-crafted a bundle that you can simply throw into your HTML page.
 
+This version is 2.0.0.
+
 
 How to Use
 ----------
