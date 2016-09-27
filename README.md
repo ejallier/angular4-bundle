@@ -60,9 +60,16 @@ What's Included
 * `@angular/router`
 
 
-How is It Done?
+How Is It Done?
 ---------------
 
 Well, I merged the above UMD bundle files, in the correct order, then
 manually hand-edited the file, converting UMD module declaration headers
 with `System.amdDefine` calls.
+
+
+How Large Is It?
+----------------
+
+Raw: `polyfills.js`: 78KB, `bundle.min.js`: 956KB, Total: 1,034KB  
+Gzipped: `polyfills.js`: 30KB, `bundle.min.js`: 269KB, Total: 299KB  
