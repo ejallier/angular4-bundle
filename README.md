@@ -65,6 +65,18 @@ What's Included
 * `@angular/router`
 
 
+Caveat
+------
+
+The `Rx.js` included is *not* the latest version.  `Rx.js` changed to a
+UMD module definition from the original `System.js` format.
+However, unlike the Angular 2 modules which are quite easy to
+reverse-engineer and understand, the new `Rx.js` bundle is not.
+I have not figured out how to manually convert this into the proper
+`System.register` format, so I had to fall back to an earlier (but still
+perfectly workable) version.
+
+
 How Is It Done?
 ---------------
 
