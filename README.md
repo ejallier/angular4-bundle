@@ -11,7 +11,7 @@ No more. They are now UMD modules that require a build process (e.g. with WebPac
 For those who don't want to bother with a build step (and just want all of Angular 2
 anyway), I have hand-crafted a bundle that you can simply throw into your HTML page.
 
-This version is 2.0.0.
+This version is 2.4.3.
 
 
 How to Use
@@ -88,5 +88,5 @@ with `System.amdDefine` calls.
 How Large Is It?
 ----------------
 
-Raw: `polyfills.js`: 78KB, `bundle.min.js`: 956KB, Total: 1,034KB  
-Gzipped: `polyfills.js`: 30KB, `bundle.min.js`: 269KB, Total: 299KB  
+Raw: `polyfills.js`: 78KB, `bundle-2.4.3.min.js`: 1MB, Total: 1,078KB  
+Gzipped: `polyfills.js`: 31KB, `bundle-2.4.3.min.js`: 310KB, Total: 340KB  
