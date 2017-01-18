@@ -24,10 +24,10 @@ How to Use
 	<base href="/">
 
 	<!-- Polyfills for ES6 -->
-	<script src="polyfills.js"></script>
+	<script src="polyfills-2.4.3.js"></script>
 
 	<!-- Library bundle -->
-	<script src="bundle.min.js"></script>
+	<script src="bundle-2.4.3.min.js"></script>
 
 	<!-- Your scripts -->
 	<script src="script.js"></script>
