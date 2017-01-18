@@ -65,16 +65,47 @@ What's Included
 * `@angular/router`
 
 
-Caveat
-------
+Note on Rx
+----------
 
-The `Rx.js` included is *not* the latest version.  `Rx.js` changed to a
-UMD module definition from the original `System.js` format.
-However, unlike the Angular 2 modules which are quite easy to
-reverse-engineer and understand, the new `Rx.js` bundle is not.
-I have not figured out how to manually convert this into the proper
-`System.register` format, so I had to fall back to an earlier (but still
-perfectly workable) version.
+The `rxjs` bundle included is the whole thing.  It does not split into
+further modules.  As a result, you only have to `import { ... } from "rxjs/Rx"`
+to get the entire feature set.
+
+Loading individual `Rx` modules are not supported.  For example, the following
+is not supported:
+
+~~~~~~~~ {.js}
+import { merge } from "rxjs/operator/merge";
+
+merge(...);
+~~~~~~~~
+
+Instead, simply importing the entire `Rx` package will be fine:
+
+~~~~~~~~ {.js}
+import { Observable } from "rxjs/Rx";
+
+...merge(...);
+Observable.prototype.merge(...);
+~~~~~~~~
+
+Instead of:
+
+
+~~~~~~~~ {.js}
+import { merge } from "rxjs/Observable/from";
+
+var obs = from(...);
+~~~~~~~~
+
+do this:
+
+~~~~~~~~ {.js}
+import { Observable } from "rxjs/Rx";
+
+var obs = Observable.from(...);
+~~~~~~~~
 
 
 How Is It Done?
