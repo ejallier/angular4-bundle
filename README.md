@@ -102,7 +102,7 @@ var obs = from(...);
 do this:
 
 ~~~~~~~~ {.js}
-import { Observable } from "rxjs/Rx";
+import { from } from "rxjs/Rx";
 
 var obs = Observable.from(...);
 ~~~~~~~~
