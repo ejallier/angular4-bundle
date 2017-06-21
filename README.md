@@ -74,7 +74,7 @@ The `rxjs` bundle included is the whole thing.  It does not split into
 further modules.  As a result, you only have to `import { ... } from "rxjs/Rx"`
 to get the entire feature set.
 
-Loading individual `Rx` modules are not supported.  For example, the following
+Loading individual `Rx` modules is not supported.  For example, the following
 is not supported:
 
 ~~~~~~~~ {.js}
@@ -96,7 +96,7 @@ Instead of:
 
 
 ~~~~~~~~ {.js}
-import { from} from "rxjs/Observable/from";
+import { from } from "rxjs/Observable/from";
 
 var obs = from(...);
 ~~~~~~~~
